@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八方旅人 · 全攻略指南</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>八方旅人</h1>
+            <p class="subtitle">Octopath Traveler · 全攻略指南</p>
+        </div>
+        <nav class="main-nav">
+            <button class="nav-btn active" data-section="characters">角色篇</button>
+            <button class="nav-btn" data-section="jobs">职业篇</button>
+            <button class="nav-btn" data-section="combat">战斗篇</button>
+            <button class="nav-btn" data-section="exploration">探索篇</button>
+            <button class="nav-btn" data-section="tips">进阶技巧</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <!-- 角色篇 -->
+        <section id="characters" class="section active">
+            <h2>八位旅人</h2>
+            <p class="section-desc">每位角色都有独特的故事与战斗风格，选择你心仪的旅人开始冒险吧。</p>
+            <div class="character-grid">
+                <div class="char-card" data-char="olberic">
+                    <div class="char-portrait olberic"></div>
+                    <div class="char-info">
+                        <h3>奥尔贝里克</h3>
+                        <span class="char-title">剑士</span>
+                        <p class="char-desc">曾经的王国骑士，寻找背叛的战友。拥有最强的物理输出与挑衅能力。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:95%"></div></div></div>
+                            <div class="stat"><span>防御</span><div class="bar"><div style="width:90%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:55%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="cyrus">
+                    <div class="char-portrait cyrus"></div>
+                    <div class="char-info">
+                        <h3>赛拉斯</h3>
+                        <span class="char-title">学者</span>
+                        <p class="char-desc">学院的天才学者，追求失落的知识。全体魔法攻击，弱点分析专家。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:50%"></div></div></div>
+                            <div class="stat"><span>魔力</span><div class="bar"><div style="width:98%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:70%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="primrose">
+                    <div class="char-portrait primrose"></div>
+                    <div class="char-info">
+                        <h3>普莉姆萝洁</h3>
+                        <span class="char-title">舞娘</span>
+                        <p class="char-desc">追寻父亲真相的舞娘。辅助型角色，可诱惑NPC加入队伍。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:45%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:92%"></div></div></div>
+                            <div class="stat"><span>辅助</span><div class="bar"><div style="width:95%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="ttherion">
+                    <div class="char-portrait therion"></div>
+                    <div class="char-info">
+                        <h3>特欧尼尔</h3>
+                        <span class="char-title">盗贼</span>
+                        <p class="char-desc">寻找失落宝石的盗贼。高速连击，偷取道具与金币。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:80%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:98%"></div></div></div>
+                            <div class="stat"><span>暴击</span><div class="bar"><div style="width:85%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="alphen">
+                    <div class="char-portrait alphen"></div>
+                    <div class="char-info">
+                        <h3>亚芬</h3>
+                        <span class="char-title">药师</span>
+                        <p class="char-desc">守护村庄的药师。最强治疗者，可调制药剂恢复全队。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>治疗</span><div class="bar"><div style="width:98%"></div></div></div>
+                            <div class="stat"><span>防御</span><div class="bar"><div style="width:70%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:60%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="tessa">
+                    <div class="char-portrait tessa"></div>
+                    <div class="char-info">
+                        <h3>泰莎</h3>
+                        <span class="char-title">商人</span>
+                        <p class="char-desc">重建家族的商人。可雇佣NPC战斗，金钱相关技能丰富。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:70%"></div></div></div>
+                            <div class="stat"><span>辅助</span><div class="bar"><div style="width:80%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:75%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="haanit">
+                    <div class="char-portrait haanit"></div>
+                    <div class="char-info">
+                        <h3>海茵特</h3>
+                        <span class="char-title">猎人</span>
+                        <p class="char-desc">寻找师父的猎人。可捕捉怪物辅助战斗，远程物理输出。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>攻击</span><div class="bar"><div style="width:85%"></div></div></div>
+                            <div class="stat"><span>速度</span><div class="bar"><div style="width:80%"></div></div></div>
+                            <div class="stat"><span>捕捉</span><div class="bar"><div style="width:90%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-card" data-char="afel">
+                    <div class="char-portrait afel"></div>
+                    <div class="char-info">
+                        <h3>阿芳</h3>
+                        <span class="char-title">神官</span>
+                        <p class="char-desc">侍奉神明的神官。全体复活与增益，破防专家。</p>
+                        <div class="char-stats">
+                            <div class="stat"><span>魔力</span><div class="bar"><div style="width:90%"></div></div></div>
+                            <div class="stat"><span>辅助</span><div class="bar"><div style="width:95%"></div></div></div>
+                            <div class="stat"><span>防御</span><div class="bar"><div style="width:50%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 角色详情弹窗 -->
+            <div class="char-detail-modal" id="charModal">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body" id="modalBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 职业篇 -->
+        <section id="jobs" class="section">
+            <h2>职业系统</h2>
+            <p class="section-desc">八大基础职业 + 四大隐藏职业，打造最强队伍。</p>
+
+            <div class="job-tabs">
+                <button class="job-tab active" data-job="basic">基础职业</button>
+                <button class="job-tab" data-job="advanced">隐藏职业</button>
+            </div>
+
+            <div class="job-grid" id="jobGrid">
+                <!-- 基础职业 -->
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">剑</div>
+                    <h3>剑士</h3>
+                    <p class="job-weapon">武器：剑</p>
+                    <ul>
+                        <li>高物理输出，单体/全体攻击兼备</li>
+                        <li>挑衅：强制敌人攻击自己</li>
+                        <li>反击：受到攻击自动反击</li>
+                        <li>推荐副职业：战士、盗贼</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">书</div>
+                    <h3>学者</h3>
+                    <p class="job-weapon">武器：书、杖</p>
+                    <ul>
+                        <li>火/冰/雷三属性全体魔法</li>
+                        <li>洞察：战斗中显示敌人弱点</li>
+                        <li>魔法伤害随魔力提升</li>
+                        <li>推荐副职业：神官、商人</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">扇</div>
+                    <h3>舞娘</h3>
+                    <p class="job-weapon">武器：扇</p>
+                    <ul>
+                        <li>魅惑：战斗外可诱惑NPC</li>
+                        <li>增幅舞：提升队友攻击力</li>
+                        <li>辅助能力出众</li>
+                        <li>推荐副职业：学者、神官</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">匕</div>
+                    <h3>盗贼</h3>
+                    <p class="job-weapon">武器：匕首、剑</p>
+                    <ul>
+                        <li>偷窃：获取敌人/NPC物品</li>
+                        <li>高暴击与连击</li>
+                        <li>破防后伤害极高</li>
+                        <li>推荐副职业：剑士、猎人</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">瓶</div>
+                    <h3>药师</h3>
+                    <p class="job-weapon">武器：斧、杖</p>
+                    <ul>
+                        <li>调合：使用素材进行治疗/增益</li>
+                        <li>最强单体治疗</li>
+                        <li>可复活队友</li>
+                        <li>推荐副职业：神官、商人</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">钱</div>
+                    <h3>商人</h3>
+                    <p class="job-weapon">武器：枪、弓</p>
+                    <ul>
+                        <li>雇佣：花钱雇佣NPC战斗</li>
+                        <li>捐赠：为队友恢复SP</li>
+                        <li>商人交易系统</li>
+                        <li>推荐副职业：剑士、猎人</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">弓</div>
+                    <h3>猎人</h3>
+                    <p class="job-weapon">武器：弓、枪</p>
+                    <ul>
+                        <li>捕捉：捕获怪物辅助战斗</li>
+                        <li>兽王召唤</li>
+                        <li>远程物理输出稳定</li>
+                        <li>推荐副职业：盗贼、剑士</li>
+                    </ul>
+                </div>
+
+                <div class="job-card" data-type="basic">
+                    <div class="job-icon">光</div>
+                    <h3>神官</h3>
+                    <p class="job-weapon">武器：杖、书</p>
+                    <ul>
+                        <li>全体治疗与复活</li>
+                        <li>圣光攻击（克制暗属性）</li>
+                        <li>结界：提升队伍魔防</li>
+                        <li>推荐副职业：学者、舞娘</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-grid hidden" id="advancedJobGrid">
+                <div class="job-card advanced">
+                    <div class="job-icon">星</div>
+                    <h3>符文大师</h3>
+                    <p class="job-location">Location：永恒之殿</p>
+                    <ul>
+                        <li>隐藏职业，需击败守护者</li>
+                        <li>武器附加元素伤害</li>
+                        <li>符文增幅：提升魔法伤害</li>
+                        <li>最强魔法输出职业</li>
+                    </ul>
+                </div>
+
+                <div class="job-card advanced">
+                    <div class="job-icon">武</div>
+                    <h3>武艺家</h3>
+                    <p class="job-location">Location：试炼之塔</p>
+                    <ul>
+                        <li>隐藏职业，需通过试炼</li>
+                        <li>极限技：消耗HP释放超强攻击</li>
+                        <li>气合：提升物理伤害</li>
+                        <li>最强物理输出职业</li>
+                    </ul>
+                </div>
+
+                <div class="job-card advanced">
+                    <div class="job-icon">魔</div>
+                    <h3>魔术师</h3>
+                    <p class="job-location">Location：魔导研究所</p>
+                    <ul>
+                        <li>隐藏职业，需破解机关</li>
+                        <li>全体魔法增幅50%</li>
+                        <li>魔法反射</li>
+                        <li>终极魔法输出</li>
+                    </ul>
+                </div>
+
+                <div class="job-card advanced">
+                    <div class="job-icon">暗</div>
+                    <h3>暗夜之王</h3>
+                    <p class="job-location">Location：深渊洞窟</p>
+                    <ul>
+                        <li>隐藏职业，需击败暗之守护者</li>
+                        <li>暗属性全体攻击</li>
+                        <li>吸血：造成伤害回复HP</li>
+                        <li>最强暗属性职业</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 战斗篇 -->
+        <section id="combat" class="section">
+            <h2>战斗系统</h2>
+            <p class="section-desc">掌握弱点、破防、增幅的核心机制，成为战斗大师。</p>
+
+            <div class="combat-grid">
+                <div class="combat-card">
+                    <div class="combat-icon">!</div>
+                    <h3>弱点系统</h3>
+                    <p>每个敌人都有弱点武器/属性。使用对应攻击可降低其防御点（盾牌图标）。</p>
+                    <div class="tip-box">
+                        <strong>提示：</strong>未发现的弱点会显示为「?」，使用不同武器试探或用学者技能「洞察」自动揭示。
+                    </div>
+                </div>
+
+                <div class="combat-card">
+                    <div class="combat-icon">★</div>
+                    <h3>破防（Break）</h3>
+                    <p>将敌人防御点降至0即进入破防状态，此时敌人眩晕一回合，受伤翻倍。</p>
+                    <div class="tip-box">
+                        <strong>核心策略：</strong>破防回合配合增幅（Boost）打出爆发伤害，是高难度战斗的关键。
+                    </div>
+                </div>
+
+                <div class="combat-card">
+                    <div class="combat-icon">↑</div>
+                    <h3>增幅（Boost）</h3>
+                    <p>每回合积累BP，消耗BP可增幅1-3次，大幅提升攻击/魔法/技能威力。</p>
+                    <div class="tip-box">
+                        <strong>增幅倍率：</strong>1次=1.5倍，2次=2倍，3次=2.5倍。满增幅后技能威力极大。
+                    </div>
+                </div>
+
+                <div class="combat-card">
+                    <div class="combat-icon">⚡</div>
+                    <h3>连续行动</h3>
+                    <p>速度属性决定行动顺序。高速角色可多次行动，配合破防可实现连续输出。</p>
+                    <div class="tip-box">
+                        <strong>技巧：</strong>舞娘的「再行动」技能可让队友额外行动一次，极其强力。
+                    </div>
+                </div>
+            </div>
+
+            <div class="boss-section">
+                <h3>BOSS战要点</h3>
+                <div class="boss-list">
+                    <div class="boss-item">
+                        <span class="boss-name">第一章BOSS</span>
+                        <span class="boss-level">Lv.15-20</span>
+                        <p>弱点固定，建议提前练级到18+，准备充足回复道具。</p>
+                    </div>
+                    <div class="boss-item">
+                        <span class="boss-name">第二章BOSS</span>
+                        <span class="boss-level">Lv.30-35</span>
+                        <p>开始出现多弱点BOSS，需携带多种武器角色。</p>
+                    </div>
+                    <div class="boss-item">
+                        <span class="boss-name">第三章BOSS</span>
+                        <span class="boss-level">Lv.45-50</span>
+                        <p>建议配备学者揭示弱点，破防后全力输出。</p>
+                    </div>
+                    <div class="boss-item">
+                        <span class="boss-name">最终BOSS</span>
+                        <span class="boss-level">Lv.70+</span>
+                        <p>多阶段战斗，需全员Lv.65+，推荐解锁隐藏职业后再挑战。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 探索篇 -->
+        <section id="exploration" class="section">
+            <h2>世界探索</h2>
+            <p class="section-desc">广阔的奥斯特拉大陆，丰富的隐藏内容等你发现。</p>
+
+            <div class="region-grid">
+                <div class="region-card">
+                    <h3>弗罗斯特原野</h3>
+                    <span class="region-tag">初期区域</span>
+                    <ul>
+                        <li>剑士与猎人的故乡</li>
+                        <li>可获取早期武器装备</li>
+                        <li>支线任务丰富</li>
+                        <li>适合Lv.1-15探索</li>
+                    </ul>
+                </div>
+
+                <div class="region-card">
+                    <h3>桑兰多地区</h3>
+                    <span class="region-tag">中期区域</span>
+                    <ul>
+                        <li>学者与舞娘的故事舞台</li>
+                        <li>隐藏宝箱与迷宫</li>
+                        <li>强力装备入手</li>
+                        <li>适合Lv.20-40探索</li>
+                    </ul>
+                </div>
+
+                <div class="region-card">
+                    <h3>弗拉弗雷德</h3>
+                    <span class="region-tag">高级区域</span>
+                    <ul>
+                        <li>商人与药师的根据地</li>
+                        <li>强力BOSS出没</li>
+                        <li>稀有道具与装备</li>
+                        <li>适合Lv.40-60探索</li>
+                    </ul>
+                </div>
+
+                <div class="region-card">
+                    <h3>终焉之地</h3>
+                    <span class="region-tag">终局区域</span>
+                    <ul>
+                        <li>最终迷宫与隐藏BOSS</li>
+                        <li>最强装备与道具</li>
+                        <li>需要满级队伍</li>
+                        <li>适合Lv.65+挑战</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collectibles">
+                <h3>收集要素</h3>
+                <div class="collect-grid">
+                    <div class="collect-item">
+                        <h4>宝箱</h4>
+                        <p>全地图约500+宝箱，包含武器、防具、道具与稀有素材。部分需要特定NPC技能打开。</p>
+                    </div>
+                    <div class="collect-item">
+                        <h4>支线剧情</h4>
+                        <p>每个角色有4个章节的主线故事，外加数十个支线。完成支线可获取独特装备与称号。</p>
+                    </div>
+                    <div class="collect-item">
+                        <h4>隐藏BOSS</h4>
+                        <p>击败四个隐藏职业守护者，以及终极隐藏BOSS「暗之人」，挑战游戏最高难度。</p>
+                    </div>
+                    <div class="collect-item">
+                        <h4>NPC互动</h4>
+                        <p>通过打听、索取、诱惑、雇佣等技能与NPC互动，获取隐藏道具与信息。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 进阶技巧 -->
+        <section id="tips" class="section">
+            <h2>进阶技巧</h2>
+            <p class="section-desc">从新手到大师的进阶之路。</p>
+
+            <div class="tips-list">
+                <div class="tip-card">
+                    <h3>练级效率</h3>
+                    <ul>
+                        <li><strong>初期：</strong>弗罗斯特原野刷狼群，经验效率最高</li>
+                        <li><strong>中期：</strong>桑兰多地区刷骷髅兵，金币与经验双丰收</li>
+                        <li><strong>后期：</strong>终焉之地刷暗影骑士，经验爆发</li>
+                        <li><strong>技巧：</strong>装备「经验加成」饰品，组满4人效率最大化</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card">
+                    <h3>赚钱攻略</h3>
+                    <ul>
+                        <li><strong>偷窃：</strong>盗贼偷取稀有道具出售，是最快赚钱方式</li>
+                        <li><strong>猎人：</strong>捕捉怪物后出售，稳定收入来源</li>
+                        <li><strong>商人：</strong>利用物价波动低买高卖</li>
+                        <li><strong>后期：</strong>刷最终BOSS区域怪物，掉落稀有装备</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card">
+                    <h3>最优队伍配置</h3>
+                    <ul>
+                        <li><strong>物理队：</strong>剑士+盗贼+猎人+商人</li>
+                        <li><strong>魔法队：</strong>学者+舞娘+神官+药师</li>
+                        <li><strong>均衡队：</strong>剑士+学者+盗贼+神官</li>
+                        <li><strong>速攻队：</strong>盗贼+猎人+舞娘+商人（高速破防流）</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card">
+                    <h3>副职业搭配推荐</h3>
+                    <ul>
+                        <li><strong>剑士+盗贼：</strong>高攻高暴击，破防专家</li>
+                        <li><strong>学者+神官：</strong>魔法输出+治疗，全能法师</li>
+                        <li><strong>猎人+剑士：</strong>远程物理+近战切换</li>
+                        <li><strong>药师+神官：</strong>双治疗，不死队</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card">
+                    <h3>隐藏BOSS打法</h3>
+                    <ul>
+                        <li><strong>准备：</strong>全员Lv.65+，携带最强装备</li>
+                        <li><strong>弱点：</strong>提前用学者洞察揭示所有弱点</li>
+                        <li><strong>破防：</strong>多带不同武器角色，确保能快速破防</li>
+                        <li><strong>爆发：</strong>破防回合全员满增幅输出</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card">
+                    <h3>新手常见错误</h3>
+                    <ul>
+                        <li>不要忽视防御装备，血量不是唯一生存指标</li>
+                        <li>SP管理很重要，学会合理使用普通攻击</li>
+                        <li>破防优先于输出，先破防再爆发</li>
+                        <li>支线任务别忘了做，奖励往往很丰厚</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>八方旅人攻略指南 · Octopath Traveler Guide</p>
+        <p>本站为粉丝制作的游戏攻略，非官方内容</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
